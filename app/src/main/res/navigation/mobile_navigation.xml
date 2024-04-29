@@ -12,14 +12,38 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.univesp.odontoapp.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_agendarconsulta"
+        android:name="com.univesp.odontoapp.ui.agendar.AgendarConsultaFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_agendarconsulta" >
+        <action
+            android:id="@+id/action_nav_agendarconsulta_to_nav_profissional"
+            app:destination="@id/nav_profissional" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.univesp.odontoapp.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_profissional"
+        android:name="com.univesp.odontoapp.ui.profissional.ProfissionalFragment"
+        android:label="Profissionais"
+        tools:layout="@layout/fragment_profissional">
+        <action
+            android:id="@+id/action_nav_profissional_to_nav_horarios"
+            app:destination="@id/nav_horarios" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_minhaconsulta"
+        android:name="com.univesp.odontoapp.ui.minhaconsulta.MinhaConsultaFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_minhaconsulta" />
+
+    <fragment
+        android:id="@+id/nav_horarios"
+        android:name="com.univesp.odontoapp.ui.horarios.HorariosFragment"
+        android:label="Horários"
+        tools:layout="@layout/fragment_horarios">
+        <action
+            android:id="@+id/action_nav_horarios_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>

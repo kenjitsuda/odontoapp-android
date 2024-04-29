@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomCalendarMonth" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColorPrimary">@color/teal_700</item>
+    </style>
+</resources>

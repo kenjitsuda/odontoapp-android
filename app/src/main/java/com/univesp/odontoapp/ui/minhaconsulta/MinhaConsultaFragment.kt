@@ -1,4 +1,4 @@
-package com.univesp.odontoapp.ui.slideshow
+package com.univesp.odontoapp.ui.minhaconsulta
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.univesp.odontoapp.databinding.FragmentSlideshowBinding
+import com.univesp.odontoapp.databinding.FragmentMinhaconsultaBinding
 
-class SlideshowFragment : Fragment() {
+class MinhaConsultaFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentMinhaconsultaBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        val minhaConsultaViewModel =
+            ViewModelProvider(this).get(MinhaConsultaViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentMinhaconsultaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        minhaConsultaViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

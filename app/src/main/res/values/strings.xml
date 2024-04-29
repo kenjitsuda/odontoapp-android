@@ -10,4 +10,6 @@
     <string name="menu_home">OdontoApp</string>
     <string name="menu_gallery">Agendar consulta</string>
     <string name="menu_slideshow">Minhas consultas</string>
+    <string name="selecione_uma_data">Selecione uma data</string>
+    <string name="ok">OK</string>
 </resources>

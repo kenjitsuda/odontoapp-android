@@ -1,13 +1,15 @@
-package com.univesp.odontoapp.ui.gallery
+package com.univesp.odontoapp.ui.agendar
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class AgendarConsultaViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+        value = "Selecione uma data"
     }
     val text: LiveData<String> = _text
+
+
 }
