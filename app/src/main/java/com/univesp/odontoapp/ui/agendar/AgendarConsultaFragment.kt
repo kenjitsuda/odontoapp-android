@@ -57,30 +57,30 @@ class AgendarConsultaFragment : Fragment() {
         return root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val menuHost: MenuHost = requireActivity()
-
-        menuHost.addMenuProvider(object : MenuProvider {
-            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                menuInflater.inflate(R.menu.main, menu)
-            }
-
-            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-                // Handle the menu selection
-                return when (menuItem.itemId) {
-                    R.id.data -> {
-                        // clearCompletedTasks()
-                        true
-                    }
-                    R.id.profissional -> {
-                        // loadTasks(true)
-                        true
-                    }
-                    else -> false
-                }
-            }
-        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        val menuHost: MenuHost = requireActivity()
+//
+//        menuHost.addMenuProvider(object : MenuProvider {
+//            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+//                menuInflater.inflate(R.menu.main, menu)
+//            }
+//
+//            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+//                // Handle the menu selection
+//                return when (menuItem.itemId) {
+//                    R.id.data -> {
+//                        // clearCompletedTasks()
+//                        true
+//                    }
+//                    R.id.profissional -> {
+//                        // loadTasks(true)
+//                        true
+//                    }
+//                    else -> false
+//                }
+//            }
+//        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
+//    }
 
     override fun onDestroyView() {
         super.onDestroyView()
