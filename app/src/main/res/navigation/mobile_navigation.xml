@@ -17,8 +17,8 @@
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_agendarconsulta" >
         <action
-            android:id="@+id/action_nav_agendarconsulta_to_nav_profissional"
-            app:destination="@id/nav_profissional" />
+            android:id="@+id/action_nav_agendarconsulta_to_nav_horarios"
+            app:destination="@id/nav_horarios" />
     </fragment>
 
     <fragment
@@ -27,8 +27,8 @@
         android:label="Profissionais"
         tools:layout="@layout/fragment_profissional">
         <action
-            android:id="@+id/action_nav_profissional_to_nav_horarios"
-            app:destination="@id/nav_horarios" />
+            android:id="@+id/action_nav_profissional_to_nav_agendarconsulta"
+            app:destination="@id/nav_agendarconsulta" />
     </fragment>
 
     <fragment

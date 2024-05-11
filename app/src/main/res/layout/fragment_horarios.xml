@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listaHorario">
 
@@ -60,6 +60,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:id="@+id/label_paciente"
+                android:text="Paciente: "
+                android:textSize="30dp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
             <TextView
                 android:id="@+id/label_profissional"
                 android:text="Profissional: "
@@ -82,6 +90,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <EditText
+                android:id="@+id/nomePaciente"
+                android:textSize="30dp"
+                android:textColor="@color/teal_700"
+                android:layout_width="150dp"
+                android:layout_height="50dp"/>
             <TextView
                 android:id="@+id/text_profissional"
                 android:textSize="30dp"

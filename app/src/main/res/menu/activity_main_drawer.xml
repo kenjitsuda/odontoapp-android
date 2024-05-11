@@ -9,7 +9,7 @@
             android:icon="@drawable/icone_clinico_geral"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_agendarconsulta"
+            android:id="@+id/nav_profissional"
             android:icon="@drawable/baseline_add_home_work_24"
             android:title="Agendar consulta" />
         <item
