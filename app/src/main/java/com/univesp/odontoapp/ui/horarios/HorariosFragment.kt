@@ -41,7 +41,6 @@ class HorariosFragment: Fragment() {
     private lateinit var horario: String
     private lateinit var profissional: String
     private lateinit var data: String
-    private lateinit var nomePaciente: String
     private var profissionalId: Int = 0
 
     override fun onCreateView(
@@ -67,7 +66,6 @@ class HorariosFragment: Fragment() {
         }
         binding.profissional.text = profissional
 
-//        val horarios: Array<String> = arrayOf("09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30")
         val listAdapter = HorarioAdapter(requireActivity(), horariosList)
         binding.listaHorario.adapter = listAdapter
 

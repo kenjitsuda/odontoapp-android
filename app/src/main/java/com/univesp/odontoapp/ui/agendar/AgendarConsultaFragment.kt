@@ -72,8 +72,6 @@ class AgendarConsultaFragment : Fragment() {
         }
 
         binding.continuar.setOnClickListener {
-            // Adicionar validação data, não permitir datas passadas
-            // não permitir datas vazias ou nulas
             val bundle = Bundle()
             bundle.putString("profissional", profissional)
             bundle.putInt("profissionalId", profissionalId)

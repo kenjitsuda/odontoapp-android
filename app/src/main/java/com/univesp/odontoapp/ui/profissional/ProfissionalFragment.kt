@@ -33,8 +33,6 @@ class ProfissionalFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-//    var profissionais: Array<String> = arrayOf()
-//    var descricao: Array<String> = arrayOf()
     var profissionais: Array<String> = arrayOf()
     var descricao: Array<String> = arrayOf()
     var id: Array<Int> = arrayOf()
